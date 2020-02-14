@@ -26,12 +26,3 @@ newTab.textContent = item
      })
 })
 
-
-
-function tab(){
-    const divtab = document.createElement('div')
-
-    divtab.classList.add('tab')
-    divtab.textContent = 'topic here'
-    return divtab
-}

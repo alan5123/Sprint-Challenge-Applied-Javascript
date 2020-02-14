@@ -24,12 +24,14 @@ axios
     .then((response => {
 
         const data = Object.values(response.data.articles);
+        console.log(data)
 
+        
         data.forEach(item => {
             item.forEach(data => {
                 console.log(item);
-                const authorCard = newCard(data);
-                cardContainer.appendChild(authorCard);
+                const newAuthor = newCard(data);
+                cardContainer.appendChild(newAuthor);
             })
         });
     }))
